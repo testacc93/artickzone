@@ -41,22 +41,14 @@
             <nav class="navbar navbar-light bg-light justify-content-between">
                <div id="mySidenav" class="sidenav">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                  <a href="index.html">Home</a>
-                  <a href="products.html">Products</a>
-                  <a href="about.html">About</a>
-                  <a href="client.html">Client</a>
-                  <a href="contact.html">Contact</a>
+                  <a href="/">Home</a>
+                  <a href="/products">Products</a>
+                  <a href="/about">About</a>
+                  <a href="/contact">Contact</a>
                </div>
-               <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png"></span>
-               <a class="logo" href="index.html"><img src="images/logo.png"></a></a>
+               <span id="artick-logo" class="toggle_icon" onclick="openNav()"><img src={% static "images/toggle-icon.png" %}></span>
+               <a class="logo" href="/"><img src={% static "images/logo.jpg" %}></a></a>
                <form class="form-inline ">
-                  <div class="login_text">
-                     <ul>
-                        <li><a href="#"><img src="images/user-icon.png"></a></li>
-                        <li><a href="#"><img src="images/bag-icon.png"></a></li>
-                        <li><a href="#"><img src="images/search-icon.png"></a></li>
-                     </ul>
-                  </div>
                </form>
             </nav>
          </div>
@@ -69,7 +61,7 @@
       <!-- footer section start -->
       <div class="footer_section layout_padding">
          <div class="container">
-            <div class="footer_logo"><a href="index.html"><img src="images/footer-logo.png"></a></div>
+            <div class="footer_logo"><a href="index.html"><img src={% static "images/footer-logo.png" %}></a></div>
             <div class="contact_section_2">
                <div class="row">
                   <div class="col-sm-4">
@@ -78,12 +70,12 @@
                         <ul>
                            <li>
                               <a href="#">
-                              <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left10">Address : Loram Ipusm</span>
+                              <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left10">Address : Mumbai</span>
                               </a>
                            </li>
                            <li>
                               <a href="#">
-                              <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left10">Call : +01 1234567890</span>
+                              <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left10">Call : +91 9665433548</span>
                               </a>
                            </li>
                            <li>
@@ -95,13 +87,12 @@
                      </div>
                   </div>
                   <div class="col-sm-4">
-                     <div class="footer_logo_1"><a href="index.html"><img src="images/footer-logo.png"></a></div>
-                     <p class="dummy_text">commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+                     <div class="footer_logo_1"><a href="/"><img src={% static "images/logo.jpg" %}></a></div>
                   </div>
                   <div class="col-sm-4">
                      <div class="main">
-                        <h3 class="address_text">Best Products</h3>
-                        <p class="ipsum_text">dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+                        <h3 class="address_text">Artick Zone</h3>
+                        <p class="ipsum_text">Get cute illustrations here.</p>
                      </div>
                   </div>
                </div>
@@ -118,7 +109,7 @@
                      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                   </li>
                   <li>
-                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                     <a target="_blank" href="https://www.instagram.com/artick_zone/?igshid=YmMyMTA2M2Y%3D"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                   </li>
                </ul>
             </div>

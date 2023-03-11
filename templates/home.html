@@ -14,7 +14,7 @@
                       {% comment %} <div class="read_bt"><a href="#">Buy Now</a></div> {% endcomment %}
                    </div>
                    <div class="col-sm-6">
-                      <div class="banner_img"><img src="images/banner-img.png"></div>
+                      <div class="banner_img"><img src={% static "images/banner-img.png" %}></div>
                    </div>
                 </div>
              </div>
@@ -28,7 +28,7 @@
                       <div class="read_bt"><a href="#">Buy Now</a></div>
                    </div>
                    <div class="col-sm-6">
-                      <div class="banner_img"><img src="images/banner-img.png"></div>
+                      <div class="banner_img"><img src={% static "images/banner-img.png" %}></div>
                    </div>
                 </div>
              </div>
@@ -42,7 +42,7 @@
                       <div class="read_bt"><a href="#">Buy Now</a></div>
                    </div>
                    <div class="col-sm-6">
-                      <div class="banner_img"><img src="images/banner-img.png"></div>
+                      <div class="banner_img"><img src={% static "images/banner-img.png" %}></div>
                    </div>
                 </div>
              </div>
@@ -56,7 +56,7 @@
                       <div class="read_bt"><a href="#">Buy Now</a></div>
                    </div>
                    <div class="col-sm-6">
-                      <div class="banner_img"><img src="images/banner-img.png"></div>
+                      <div class="banner_img"><img src={% static "images/Highlighter.jpg" %}></div>
                    </div>
                 </div>
              </div>
@@ -114,7 +114,7 @@
                 </div>
              </div>
              <div class="col-md-6">
-                <div><img src="images/about-img.png" class="image_3"></div>
+                <div><img src={% static "images/about-img.png" %} class="image_3"></div>
              </div>
           </div>
        </div>
@@ -129,13 +129,13 @@
              <h1 class="customer_taital">What says customers</h1>
           </div>
        </div>
-       <div id="main_slider" class="carousel slide" data-ride="carousel">
+       {% comment %} <div id="main_slider" class="carousel slide" data-ride="carousel"> {% endcomment %}
           <div class="carousel-inner">
              <div class="carousel-item active">
                 <div class="client_section_2">
                    <div class="client_main">
                       <div class="client_left">
-                         <div class="client_img"><img src="images/client-img.png"></div>
+                         <div class="client_img"><img src={% static "images/client-img.png" %}></div>
                       </div>
                       <div class="client_right">
                          <h3 class="name_text">Jonyro</h3>
@@ -148,7 +148,7 @@
                 <div class="client_section_2">
                    <div class="client_main">
                       <div class="client_left">
-                         <div class="client_img"><img src="images/client-img.png"></div>
+                         <div class="client_img"><img src={% static "images/client-img.png" %}></div>
                       </div>
                       <div class="client_right">
                          <h3 class="name_text">Jonyro</h3>
@@ -161,7 +161,7 @@
                 <div class="client_section_2">
                    <div class="client_main">
                       <div class="client_left">
-                         <div class="client_img"><img src="images/client-img.png"></div>
+                         <div class="client_img"><img src={% static "images/toggle-icon.png" %}"images/client-img.png"></div>
                       </div>
                       <div class="client_right">
                          <h3 class="name_text">Jonyro</h3>
@@ -171,11 +171,11 @@
                 </div>
              </div>
           </div>
-          <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+          {% comment %} <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
           <i class="fa fa-angle-left"></i>
           </a>
           <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-          <i class="fa fa-angle-right"></i>
+          <i class="fa fa-angle-right"></i> {% endcomment %}
           </a>
        </div>
     </div>
