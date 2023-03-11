@@ -1,4 +1,29 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block body %}{% endblock body %}
+{% block body %}
+<div class="about_section layout_padding">
+    <div class="container">
+       <div class="about_section_main">
+          <div class="row">
+             <div class="col-md-6">
+                <div class="about_taital_main">
+                   <h1 class="about_taital">About Our Artick Zone</h1>
+                   <p class="about_text">Welcome to the Artick Zone, where cute illustrations abound and are sure to brighten up your day! Our collection of adorable artwork is guaranteed to make you smile every time you see it.
+                    <br><br>
+                    From whimsical animals to charming characters, our illustrations are created with love and care to bring joy to your life. Whether you're looking for a sweet and simple design to add a pop of color to your space or a detailed masterpiece that will take your breath away, we've got you covered.
+                    <br><br>
+                    Our artists are passionate about creating art that speaks to your heart and brings a smile to your face. We believe that art has the power to uplift and inspire, and we are committed to sharing that power with you.
+                    <br><br>
+                    So why not take a stroll through the Artick Zone and see what treasures you can find? We're confident that you'll discover something that speaks to your soul and brings a little extra happiness to your life.</p>
+                   {% comment %} <div class="readmore_bt"><a href="#">Read More</a></div> {% endcomment %}
+                </div>
+             </div>
+             <div class="col-md-6">
+                <div><img src={% static "images/logo.jpg" %} class="image_3"></div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+{% endblock body %}
